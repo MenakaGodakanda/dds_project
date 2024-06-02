@@ -40,7 +40,9 @@ cmake ..
 make
 ```
 
-The output should indicate that the project was built successfully:
+The output should indicate that the project was built successfully: <br><br>
+![Screenshot 2024-06-02 231426](https://github.com/MenakaGodakanda/dds_project/assets/156875412/16544d89-0729-4352-94c9-c3f8f771d20c) <br><br>
+![Screenshot 2024-06-02 231452](https://github.com/MenakaGodakanda/dds_project/assets/156875412/5c7e42a1-4cfd-4d70-b43e-5a95846fc58c)
 
 
 ## Running the Example
@@ -52,7 +54,9 @@ Navigate to the build directory and run the example executable:
 ./example
 ```
 
-The output should display the following, indicating that the SafeDDS class is working correctly:
+The output should display the following, indicating that the SafeDDS class is working correctly: <br><br>
+![Screenshot 2024-06-02 231410](https://github.com/MenakaGodakanda/dds_project/assets/156875412/9a15a9fa-ca5f-427e-be64-43c07aec40cf)
+
 
 
 ## Running the Tests
@@ -64,7 +68,9 @@ Execute the tests using CTest:
 ctest
 ```
 
-The output should show that all tests passed:
+The output should show that all tests passed: <br><br>
+![Screenshot 2024-06-02 231526](https://github.com/MenakaGodakanda/dds_project/assets/156875412/090e5422-ae32-4dcc-a212-f72bb16184a9)
+
 
 ## File Structure
 include/ - Header files
