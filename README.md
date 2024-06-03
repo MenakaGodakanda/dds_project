@@ -73,15 +73,6 @@ The output should show that all tests passed: <br><br>
 
 
 ## File Structure
-include/ - Header files
-src/ - Source files
-examples/ - Example programs
-tests/ - Test cases
-build/ - Build directory
-CMakeLists.txt - CMake configuration file
-Usage
-Include the library in your project and use the SafeDDS class for safe publish-subscribe communication.
-
 ```
 dds_project/
 ├── include/        # Header files
@@ -101,6 +92,9 @@ The Data Distribution Service (DDS) is a real-time data-centric middleware stand
 ### SafeDDS
 
 Safe DDS is an extension with additional safety features. This middleware aims to access DDS from a full range of CPUs and MCUs (resource-constrained systems) used in real-world critical applications.
+
+## Usage
+Include the library in your project and use the SafeDDS class for safe publish-subscribe communication.
 
 ## License
 This project is licensed under the MIT License.
