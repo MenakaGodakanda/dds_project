@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project implements a basic DDS and SafeDDS communication protocol in C++.
+This project implements a basic DDS and SafeDDS communication protocol in C++.<br>
+<a href="https://github.com/MenakaGodakanda/dds_project/blob/main/Project_Description.md">Project Description</a>
 
 ## Features
 - Basic DDS protocol for publish-subscribe communication.
