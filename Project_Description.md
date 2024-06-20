@@ -279,6 +279,6 @@ dds_project/
 
 ### Test File (test_safe_dds.cpp)
 - This file contains unit tests for the SafeDDS class.
-- testPublish: Tests the basic functionality of publishing.
-- testSubscribe: Tests the basic functionality of subscribing.
-- Both tests print a message indicating success and use assertions to ensure correctness.
+- `testPublish`: Tests the basic functionality of publishing.
+- `testSubscribe`: Tests the basic functionality of subscribing.
+- Print a message indicating success and use assertions to ensure correctness.
