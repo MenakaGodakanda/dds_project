@@ -254,22 +254,31 @@ dds_project/
 
 ## Coding Details:
 
-### Main Program (main.cpp)
+### Source File (safedds.cpp)
+- This file implements the methods of the SafeDDS class.
+- publish: This method validates the message, then locks the mutex to ensure thread safety while accessing topic. It then adds the message to the appropriate topic queue.
+- subscribe: This method locks the mutex, checks if there are any messages for the requested topic, retrieves the oldest message, and removes it from the queue.
+- validateMessage: A simple validation function that checks if the message is not empty.
 
+### Header File (dds.h)
+- This file defines the abstract base class `DDS`.
+- `DDS` is an abstract base class with two pure virtual functions: `publish` and `subscribe`.
+- These functions must be implemented by any derived class.
 
-### Header File ()
+### Header File (safedds.h)
+- This file defines the `SafeDDS` class that inherits from `DDS`.
+- `SafeDDS` inherits from `DDS` and implements the `publish` and `subscribe` methods.
+- The private method `validateMessage` is used to validate messages before publishing.
 
- 
+### Example Program (example.cpp)
+- This file demonstrates how to use the `SafeDDS` class.
+- Creates an instance of `SafeDDS`.
+- Publishes a message to `example_topic`.
+- Subscribes to `example_topic` and prints the received message.
+- Catches and prints any exceptions that occur during publishing or subscribing.
 
-### Modbus Implementation ()
-
-
-
-### Modbus Example ()
-
-
-### Root CMake Configuration ()
-
-
-### Summary
-
+### Test File (test_safe_dds.cpp)
+- This file contains unit tests for the SafeDDS class.
+- testPublish: Tests the basic functionality of publishing.
+- testSubscribe: Tests the basic functionality of subscribing.
+- Both tests print a message indicating success and use assertions to ensure correctness.
